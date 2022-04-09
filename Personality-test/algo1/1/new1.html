@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+<style type="text/css">
+
+body{
+            background-image:  url(/bg.jpg); display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+        }
+.header{
+
+	height: 70px;
+	padding-left: 20px;
+	padding-top:20px;
+	color: rgb(68, 68, 88);
+	font-family: 'Quicksand';
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: lowercase;
+
+}
+font:hover{
+	color:rgb(33, 33, 39);
+	animation:w3-effect 4s 1;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+</head>
+
+  <form name="quiz">
+<div style="height: 75px"></div>
+<center><div style="padding: 1%;font-family: helvetica;">
+    6. Après avoir été coincé(e) dans un embouteillage
+    causé par un accident, j’accélère pour évacuer mon
+    agacement dès que je peux enfin m’échapper, mais
+    je continue à bouillonner intérieurement.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q1" value="in" id="q1s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q1" value="ex" id="q1i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    7. Si mon chauffe-eau tombe en panne, cela n’a
+    pas grand effet sur mon humeur, car je sais qu’il
+    suffit d’appeler un plombier pour le faire réparer.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q2" value="ex" id="q2s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q2" value="in" id="q2i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    8. Si je rencontre un homme/une femme
+    formidable avec qui j’ai très envie de sortir, une
+    réponse négative me met en général de mauvaise
+    humeur pendant plusieurs heures, ou même
+    plusieurs jours.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q3" value="ex" id="q3s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q3" value="in" id="q3i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    9. Si l’on pense à moi pour une promotion ou une
+    importante récompense professionnelle,
+    finalement accordée à quelqu’un qui me semble
+    moins qualifié, je rebondis en général assez vite.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q4" value="in" id="q4s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q4" value="ex" id="q4i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    10. Lors d’une soirée, au cours d’une conversation
+    avec un passionnant inconnu, si je reste muet(te)
+    lorsqu’il m’interroge à mon sujet, j’ai tendance
+    à me rejouer mentalement tout l’entretien – en
+    imaginant cette fois ce que j’aurais dû dire –
+    pendant des heures et des heures, et même des
+    jours entiers.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q5" value="in" id="q5s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q5" value="ex" id="q5i">Disagree<br>
+</div></center>
+</form>
+
+
+<p style="padding: 1%"><center><button onclick="validate()">Next</button></center></p>
+
+
+<script>
+    sessionStorage.s=0;
+    sessionStorage.in=0;
+    function op(){ window.open("final.html","_self");}
+function myFunction() {
+if (document.getElementById('q1i').checked) {
+    sessionStorage.s++;
+   }
+
+if (document.getElementById('q2s').checked) {
+    sessionStorage.in++;
+   }
+if (document.getElementById('q3i').checked) {
+    sessionStorage.s++;
+   }
+
+if (document.getElementById('q4s').checked) {
+    sessionStorage.i++;
+   }
+if (document.getElementById('q5i').checked) {
+    sessionStorage.s++;
+   }
+}
+   function validate(){
+if (!(document.getElementById('q1s').checked)&&!(document.getElementById('q1i').checked))
+{
+    alert("Please select an answer for the question 6!!!");
+    return false;
+}
+else if (!(document.getElementById('q2s').checked)&&!(document.getElementById('q2i').checked))
+{
+    alert("Please select an answer for the question 7!!!");
+    return false;
+}
+else if (!(document.getElementById('q3s').checked)&&!(document.getElementById('q3i').checked))
+{
+    alert("Please select an answer for the question 8!!!");
+    return false;
+}
+else if (!(document.getElementById('q4s').checked)&&!(document.getElementById('q4i').checked))
+{
+    alert("Please select an answer for the question 9!!!");
+    return false;
+}
+else if (!(document.getElementById('q5s').checked)&&!(document.getElementById('q5i').checked))
+{
+    alert("Please select an answer for the question 10!!!");
+    return false;
+}
+myFunction();
+op();
+}
+</script>
+
+</body>
+</html>

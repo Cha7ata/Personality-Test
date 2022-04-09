@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+<style type="text/css">
+body{
+            background-image:  url(/bg.jpg); display: block;
+             margin-left: auto;
+            margin-right: auto;
+             width: 50%;
+        }
+.header{
+
+	height: 70px;
+	padding-left: 20px;
+	padding-top:20px;
+	color: rgb(68, 68, 88);
+	font-family: 'Quicksand';
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: lowercase;
+
+}
+font:hover{
+	color:rgb(33, 33, 39);
+	animation:w3-effect 4s 1;
+}
+</style>
+
+</head>
+
+  <form name="quiz">
+<div style="height: 75px"></div>
+<center><div style="padding: 1%;font-family: helvetica;">
+    6. Si je suis perturbé(e) par un événement imprévu,
+    je suis capable de reconcentrer mon attention sur
+    ce que je faisais avant d’être interrompu(e).<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q1" value="in" id="q1s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q1" value="ex" id="q1i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    7. À des moments de calme relatif, quand je suis
+assis(e) dans un train, dans un autobus, ou quand
+je fais la queue dans un magasin, je remarque
+beaucoup de choses autour de moi.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q2" value="ex" id="q2i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q2" value="in" id="q2s">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    8. Quand un projet important exige toute mon
+attention, j’essaye de m’installer dans un endroit
+le plus tranquille possible.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q3" value="ex" id="q3s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q3" value="in" id="q3i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    9. Mon attention a tendance à se laisser capter par
+    les stimuli et événements de mon environnement, et
+    j’ai du mal à me reconcentrer quand cela se produit.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q4" value="in" id="q4s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q4" value="ex" id="q4i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    10. Je n’ai aucun mal à mener une discussion
+personnelle au milieu d’une foule, lors d’un
+cocktail ou dans une grande pièce ; dans un tel
+environnement, je peux faire abstraction de tous
+les autres, même si, en me concentrant, j’arrive
+à distinguer ce qu’ils disent.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q5" value="in" id="q5s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q5" value="ex" id="q5i">Disagree<br>
+</div></center>
+</form>
+
+
+<p style="padding: 1%"><center><button onclick="validate()">Next</button></center></p>
+
+
+<script>
+    sessionStorage.s=0;
+    sessionStorage.in=0;
+    function op(){ window.open("final6.html","_self");}
+function myFunction() {
+if (document.getElementById('q1s').checked) {
+    sessionStorage.s++;
+   }
+
+if (document.getElementById('q2s').checked) {
+    sessionStorage.in++;
+   }
+if (document.getElementById('q3i').checked) {
+    sessionStorage.s++;
+   }
+
+if (document.getElementById('q4i').checked) {
+    sessionStorage.i++;
+   }
+if (document.getElementById('q5s').checked) {
+    sessionStorage.s++;
+   }
+}
+   function validate(){
+if (!(document.getElementById('q1s').checked)&&!(document.getElementById('q1i').checked))
+{
+    alert("Please select an answer for the question 6!!!");
+    return false;
+}
+else if (!(document.getElementById('q2s').checked)&&!(document.getElementById('q2i').checked))
+{
+    alert("Please select an answer for the question 7!!!");
+    return false;
+}
+else if (!(document.getElementById('q3s').checked)&&!(document.getElementById('q3i').checked))
+{
+    alert("Please select an answer for the question 8!!!");
+    return false;
+}
+else if (!(document.getElementById('q4s').checked)&&!(document.getElementById('q4i').checked))
+{
+    alert("Please select an answer for the question 9!!!");
+    return false;
+}
+else if (!(document.getElementById('q5s').checked)&&!(document.getElementById('q5i').checked))
+{
+    alert("Please select an answer for the question 10!!!");
+    return false;
+}
+myFunction();
+op();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+<style type="text/css">
+body{
+            background-image:  url(/bg.jpg); display: block;
+             margin-left: auto;
+            margin-right: auto;
+             width: 50%;
+        }
+.header{
+
+	height: 70px;
+	padding-left: 20px;
+	padding-top:20px;
+	color: rgb(68, 68, 88);
+	font-family: 'Quicksand';
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: lowercase;
+
+}
+font:hover{
+	color:rgb(33, 33, 39);
+	animation:w3-effect 4s 1;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+</head>
+
+  <form name="quiz">
+<div style="height: 75px"></div>
+<center><div style="padding: 1%;font-family: helvetica;">
+    6. Au restaurant, je préfère m’asseoir à côté de
+    la personne avec qui je parle, afin de ne pas
+    voir son visage de face.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q1" value="in" id="q1s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q1" value="ex" id="q1i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    7. Je réagis souvent à l’inconfort ou au désarroi
+d’autrui sur la base d’une intuition plutôt que
+d’une discussion explicite.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q2" value="ex" id="q2s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q2" value="in" id="q2i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    8. Quand je suis dans un lieu public et que j’ai
+    du temps à perdre, j’aime observer les gens qui
+    m’entourent.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q3" value="ex" id="q3s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q3" value="in" id="q3i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    9. Je suis mal à l’aise quand quelqu’un que je
+connais à peine me regarde droit dans les yeux
+pendant une conversation.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q4" value="in" id="q4s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q4" value="ex" id="q4i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    10. Je peux souvent déterminer si une personne
+est gênée par quelque chose rien qu’en la
+regardant.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q5" value="in" id="q5s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q5" value="ex" id="q5i">Disagree<br>
+</div></center>
+</form>
+
+
+<p style="padding: 1%"><center><button onclick="validate()">Next</button></center></p>
+
+
+<script>
+    sessionStorage.s=0;
+    sessionStorage.in=0;
+    function op(){ window.open("final3.html","_self");}
+function myFunction() {
+if (document.getElementById('q1s').checked) {
+    sessionStorage.s++;
+   }
+
+if (document.getElementById('q2s').checked) {
+    sessionStorage.in++;
+   }
+if (document.getElementById('q3s').checked) {
+    sessionStorage.s++;
+   }
+
+if (document.getElementById('q4i').checked) {
+    sessionStorage.i++;
+   }
+if (document.getElementById('q5s').checked) {
+    sessionStorage.s++;
+   }
+}
+   function validate(){
+if (!(document.getElementById('q1s').checked)&&!(document.getElementById('q1i').checked))
+{
+    alert("Please select an answer for the question 6!!!");
+    return false;
+}
+else if (!(document.getElementById('q2s').checked)&&!(document.getElementById('q2i').checked))
+{
+    alert("Please select an answer for the question 7!!!");
+    return false;
+}
+else if (!(document.getElementById('q3s').checked)&&!(document.getElementById('q3i').checked))
+{
+    alert("Please select an answer for the question 8!!!");
+    return false;
+}
+else if (!(document.getElementById('q4s').checked)&&!(document.getElementById('q4i').checked))
+{
+    alert("Please select an answer for the question 9!!!");
+    return false;
+}
+else if (!(document.getElementById('q5s').checked)&&!(document.getElementById('q5i').checked))
+{
+    alert("Please select an answer for the question 10!!!");
+    return false;
+}
+myFunction();
+op();
+}
+</script>
+
+</body>
+</html>

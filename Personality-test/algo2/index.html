@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUI ÊTES-VOUS</title>
+   <!-- la configuration de l'image bg -->
+   <style>
+        
+        body{
+            background-image:  url(/bg.jpg); display: block;
+             margin-left: auto;
+            margin-right: auto;
+             width: 50%;
+        }
+        
+       </style>
+</head>
+<body>
+    <!--  chaque question a ses propres radios et des ids uniques -->
+ Pour chacune des affirmations suivantes,<br>
+choisissez la réponse qui vous ressemble le plus :<br>
+
+<form>
+1. J’aime pratiquer des activités variées et nouvelles.
+3   <input type="radio" id="q13" class="3">
+2   <input type="radio" id="q12" class="2" >
+1   <input type="radio" id="q11">
+0   <input type="radio" id="q10"><br>
+2. J’ai tendance à faire confiance aux autres.
+3   <input type="radio" id="q23"class="3">
+2   <input type="radio" id="q22" >
+1   <input type="radio" id="q21">
+0   <input type="radio" id="q20"><br>
+3. Je suis quelqu’un de prudent(e) et j’ai les pieds sur terre.
+3   <input type="radio" id="q33"class="3">
+2   <input type="radio" id="q32" class="2">
+1   <input type="radio" id="q31">
+0   <input type="radio" id="q30"><br>
+4. J’aide les autres quand ils ont besoin de moi.
+3   <input type="radio" id="q43"class="3">
+2   <input type="radio" id="q42" class="2">
+1   <input type="radio" id="q41">
+0   <input type="radio" id="q40"><br>
+5. J’ai tendance à être anxieux(se), tendu(e).
+3   <input type="radio" id="q53"class="3">
+2   <input type="radio" id="q52" class="2">
+1   <input type="radio" id="q51">
+0   <input type="radio" id="q50"><br>
+6. Je prends du plaisir à me laisser aller à des rêveries.
+3   <input type="radio" id="q63"class="3">
+2   <input type="radio" id="q62" class="2">
+1   <input type="radio" id="q61">
+0   <input type="radio" id="q60"><br>
+7. J’aime faire la fête avec beaucoup de gens autour de moi.
+3   <input type="radio" id="q73"class="3">
+2   <input type="radio" id="q72" class="2">
+1   <input type="radio" id="q71">
+0   <input type="radio" id="q70"><br>
+8. Je suis honnête et ne pourrais pas tromper les autres.
+3   <input type="radio" id="q83"class="3">
+2   <input type="radio" id="q82" class="2">
+1   <input type="radio" id="q81">
+0   <input type="radio" id="q80"><br>
+9. Je n’ai pas une bonne opinion de moi même.
+3   <input type="radio" id="q93"class="3">
+2   <input type="radio" id="q92" class="2">
+1   <input type="radio" id="q91">
+0   <input type="radio" id="q90"><br>
+10. Je suis fidèle aux engagements que je prends.
+3   <input type="radio" id="q103"class="3">
+2   <input type="radio" id="q102" class="2">
+1   <input type="radio" id="q101">
+0   <input type="radio" id="q100"><br>
+11. Je ressens parfois des frissons lorsque j’écoute de la musique.
+3   <input type="radio" id="q113"class="3">
+2   <input type="radio" id="q112" class="2">
+1   <input type="radio" id="q111">
+0   <input type="radio" id="q110"><br>
+12. Je m’inquiète et m’angoisse très facilement, même pour des choses
+3   <input type="radio" id="q123"class="3">
+2   <input type="radio" id="q122" class="2">
+1   <input type="radio" id="q121">
+0   <input type="radio" id="q120"><br>
+13. Je suis de nature généreuse.
+3   <input type="radio" id="q133"class="3">
+2   <input type="radio" id="q132" class="2">
+1   <input type="radio" id="q131">
+0   <input type="radio" id="q130"><br>
+14. J’aime plaisanter et m’amuser avec les autres.
+3   <input type="radio" id="q143"class="3">
+2   <input type="radio" id="q142" class="2">
+1   <input type="radio" id="q141">
+0   <input type="radio" id="q140"><br>
+15. Je suis quelqu’un de méthodique et de très organisé.
+3   <input type="radio" id="q153"class="3">
+2   <input type="radio" id="q152" class="2">
+1   <input type="radio" id="q151">
+0   <input type="radio" id="q150"><br>
+16. J’ai tendance à me sentir inférieur(e) aux autres.
+3   <input type="radio" id="q163"class="3">
+2   <input type="radio" id="q162" class="2">
+1   <input type="radio" id="q161">
+0   <input type="radio" id="q160"><br>
+17. J’ai tendance à pardonner et ne suis pas rancunier(ère).
+3   <input type="radio" id="q173"class="3">
+2   <input type="radio" id="q172" class="2">
+1   <input type="radio" id="q171">
+0   <input type="radio" id="q170"><br>
+18. J’accorde une grande importance à mes sentiments
+3   <input type="radio" id="q183"class="3">
+2   <input type="radio" id="q182" class="2">
+1   <input type="radio" id="q181">
+0   <input type="radio" id="q180"><br>
+19. Je n’agis jamais sans réfléchir aux conséquences.
+3   <input type="radio" id="q193"class="3">
+2   <input type="radio" id="q192" class="2">
+1   <input type="radio" id="q191">
+0   <input type="radio" id="q190"><br>
+20. Je me cultive en lisant, en regardant des émissions scientifiques culturelles à la télévision.
+3   <input type="radio" id="q203"class="3">
+2   <input type="radio" id="q202" class="2">
+1   <input type="radio" id="q201">
+0   <input type="radio" id="q200"><br>
+21. Je fais généralement les choses avec enthousiasme et excitation.
+3   <input type="radio" id="q213"class="3">
+2   <input type="radio" id="q212" class="2">
+1   <input type="radio" id="q211">
+0   <input type="radio" id="q210"><br>
+22. Je me mets facilement en colère.
+3   <input type="radio" id="q223"class="3">
+2   <input type="radio" id="q222" class="2">
+1   <input type="radio" id="q221">
+0   <input type="radio" id="q220"><br>
+23. J’aime faire plaisir à ma famille et mes amis.
+3   <input type="radio" id="q233"class="3">
+2   <input type="radio" id="q232" class="2">
+1   <input type="radio" id="q231">
+0   <input type="radio" id="q230"><br>
+24. J’ai beaucoup d’imagination.
+3   <input type="radio" id="q243"class="3">
+2   <input type="radio" id="q242" class="2">
+1   <input type="radio" id="q241">
+0   <input type="radio" id="q240"><br>
+25. J’aime lorsque le rythme de ma vie est intense et rapide.
+3   <input type="radio" id="q253"class="3">
+2   <input type="radio" id="q252" class="2">
+1   <input type="radio" id="q251">
+0   <input type="radio" id="q250"><br>
+26. Je préfère valoriser les autres que moi-même.
+3   <input type="radio" id="q263"class="3">
+2   <input type="radio" id="q262" class="2">
+1   <input type="radio" id="q261">
+0   <input type="radio" id="q260"><br>
+27. Je m’investis beaucoup dans tout ce que j’entreprends.
+3   <input type="radio" id="q273"class="3">
+2   <input type="radio" id="q272" class="2">
+1   <input type="radio" id="q271">
+0   <input type="radio" id="q270"><br>
+28. Je me vexe souvent.
+3   <input type="radio" id="q283"class="3">
+2   <input type="radio" id="q282" class="2">
+1   <input type="radio" id="q281">
+0   <input type="radio" id="q280"><br>
+29. J’aime me tenir informé(e) et savoir ce qui se passe dans le monde.
+3   <input type="radio" id="q293"class="3">
+2   <input type="radio" id="q292" class="2">
+1   <input type="radio" id="q291">
+0   <input type="radio" id="q290"><br>
+30. Je suis poli(e) et respectueux(se) quand je parle aux autres.
+3   <input type="radio" id="q303"class="3">
+2   <input type="radio" id="q302" class="2">
+1   <input type="radio" id="q301">
+0   <input type="radio" id="q300"><br>
+31. J’aime me trouver au cœur de l’action.
+3   <input type="radio" id="q313"class="3">
+2   <input type="radio" id="q312" class="2">
+1   <input type="radio" id="q311">
+0   <input type="radio" id="q310"><br>
+32. Je suis impulsif(ve) et contrôle mal mes émotions et mes sentiments.
+3   <input type="radio" id="q323"class="3">
+2   <input type="radio" id="q322" class="2">
+1   <input type="radio" id="q321">
+0   <input type="radio" id="q320"><br>
+33. Je travaille dur jusqu’à ce que j’obtienne ce que je souhaite.
+3   <input type="radio" id="q333"class="3">
+2   <input type="radio" id="q332" class="2">
+1   <input type="radio" id="q331">
+0   <input type="radio" id="q330"><br>
+34. Je prends du plaisir à réfléchir sur de grandes questions
+3   <input type="radio" id="q343"class="3">
+2   <input type="radio" id="q342" class="2">
+1   <input type="radio" id="q341">
+0   <input type="radio" id="q340"><br>
+35. Je suis très sociable et me fais facilement des amis.
+3   <input type="radio" id="q353"class="3">
+2   <input type="radio" id="q352" class="2">
+1   <input type="radio" id="q351">
+0   <input type="radio" id="q350"><br>
+36. Je me dispute facilement avec les autres pour des choses
+3   <input type="radio" id="q363"class="3">
+2   <input type="radio" id="q362" class="2">
+1   <input type="radio" id="q361">
+0   <input type="radio" id="q360"><br>
+37. Je suis souvent de mauvaise humeur.
+3   <input type="radio" id="q373"class="3">
+2   <input type="radio" id="q372" class="2">
+1   <input type="radio" id="q371">
+0   <input type="radio" id="q370"><br>
+38. Je suis soucieux(se) de respecter mes principes moraux.
+3   <input type="radio" id="q383"class="3">
+2   <input type="radio" id="q382" class="2">
+1   <input type="radio" id="q381">
+0   <input type="radio" id="q380"><br>
+39. J’aimerais beaucoup voyager et découvrir les coutumes,
+3   <input type="radio" id="q393"class="3">
+2   <input type="radio" id="q392" class="2">
+1   <input type="radio" id="q391">
+0   <input type="radio" id="q390"><br>
+40. Je pense que la plupart des personnes sont honnêtes et gentilles.
+3   <input type="radio" id="q403"class="3">
+2   <input type="radio" id="q402" class="2">
+1   <input type="radio" id="q401">
+0   <input type="radio" id="q400"><br>
+41. Je suis respectueux(se) des règles et des interdits.
+3   <input type="radio" id="q413"class="3">
+2   <input type="radio" id="q412" class="2">
+1   <input type="radio" id="q411">
+0   <input type="radio" id="q410"><br>
+42. Je dis aux autres ce que je pense.
+3   <input type="radio" id="q423"class="3">
+2   <input type="radio" id="q422" class="2">
+1   <input type="radio" id="q421">
+0   <input type="radio" id="q420"><br>
+43. Je cherche à rompre la monotonie et les habitudes.
+3   <input type="radio" id="q433"class="3">
+2   <input type="radio" id="q432" class="2">
+1   <input type="radio" id="q431">
+0   <input type="radio" id="q430"><br>
+44. Je fais les choses avec soin et vérifie que mon travail est bien fait.
+3   <input type="radio" id="q443"class="3">
+2   <input type="radio" id="q442" class="2">
+1   <input type="radio" id="q441">
+0   <input type="radio" id="q440"><br>
+45. Je me sens souvent triste.
+3   <input type="radio" id="q453"class="3">
+2   <input type="radio" id="q452" class="2">
+1   <input type="radio" id="q451">
+0   <input type="radio" id="q1450"><br>
+46. Je partage mes affaires avec mes amis.
+3   <input type="radio" id="q463"class="3">
+2   <input type="radio" id="q462" class="2">
+1   <input type="radio" id="q461">
+0   <input type="radio" id="q460"><br>
+47. Je parle facilement, même avec des inconnus.
+3   <input type="radio" id="q473"class="3">
+2   <input type="radio" id="q472" class="2">
+1   <input type="radio" id="q471">
+0   <input type="radio" id="q470"><br>
+48. J’aime connaître et apprendre des choses nouvelles.
+3   <input type="radio" id="q483"class="3">
+2   <input type="radio" id="q482" class="2">
+1   <input type="radio" id="q481">
+0   <input type="radio" id="q480"><br>
+49. Je recherche le meilleur et la perfection dans tout ce que je fais.
+3   <input type="radio" id="q493"class="3">
+2   <input type="radio" id="q492" class="2">
+1   <input type="radio" id="q491">
+0   <input type="radio" id="q490"><br>
+50. Je suis une personne optimiste et généralement de bonne humeur.
+3   <input type="radio" id="q503"class="3">
+2   <input type="radio" id="q502" class="2">
+1   <input type="radio" id="q501">
+0   <input type="radio" id="q500"><br></form>
+
+<!--  le click sur le button activerai le fonction afficher  -->
+<p style="padding: 1%"><center><button onclick="afficher()">Cliquer pour afficher votre resultat</center></button></p>
+<h3>Extraversion</h3> <div id="result1"> Your score  will be updated</div> 
+<h5><p>Plus votre score est faible (au moins inférieur à 15), plus vous êtes introverti(e) et peu expansif(ve).
+    Vous avez tendance à être calme, modéré(e) et peu impliqué(e) dans la vie des autres. Plutôt timide,
+    effacé(e) et silencieux(se) en groupe, vous préférez le plus souvent vous consacrer à des activités
+    solitaires et être seul(e).
+    Si votre score est élevé, vous êtes plein(e) d’énergie et éprouvez des émotions positives. Vous avez
+    tendance à être loquace, actif(ve), voire exubérant(e). Vous êtes très à l’aise en groupe et puisez votre
+    dynamisme dans l’interaction avec les autres. Vous parlez et vous affirmez facilement, et attirez l’attention
+    sur vous. Vous vous montrez enthousiaste pour des projets excitants.</p></h5>
+
+<h3>Agréabilité</h3><div id="result2"> Your score  will be updated</div>
+
+<h5><p>Si votre score est faible (au moins inférieur à 15), vous avez tendance à être sceptique et à douter des
+    intentions d’autrui. Vous préférez entrer en compétition plutôt que de coopérer, et défendez davantage
+    vos intérêts que ceux du groupe. Vous êtes en général distant(e) et peu sensible au bien-être d’autrui,
+    ce qui donne parfois l’impression que vous êtes centré(e) sur vous.
+    Plus votre score est élevé, plus vous êtes prévenant(e), serviable et disposé(e) à trouver un terrain
+    d’entente en cas de conflit. Honnête et droit(e), vous êtes digne de confiance et foncièrement
+    généreux(se) et altruiste. Sympathique, respectueux(se) et amical(e), vous vous entendez bien avec
+    les autres. Vous acceptez les autres dans leurs différences, sans critique. Sensible, indulgent(e) de
+    nature, vous êtes doué(e) de compassion et pensez que les autres le sont également.</p></h5>
+    <h3>Caractère consciencieux</h3><div id="result3"> Your score  will be updated</div>
+
+<h5><p>Si votre score est faible (au moins inférieur à 15), vous éprouvez beaucoup de plaisir à pratiquer des
+    activités de courte durée, et avez des difficultés à rester concentré(e) sur vos objectifs. Impulsif(ve),
+    vous êtes perçu(e) comme une personne amusante et boute-en-train en société. Vous ne savez pas
+    toujours respecter les limites, ce qui peut vous rendre irréfléchi(e), dispersé(e), voire imprudent(e).
+    Vous ne pensez parfois pas aux conséquences de vos paroles, de vos actes, ce qui peut entraver votre
+    réussite, notamment au travail.
+    Si votre score est élevé, vous êtes prudent(e), réfléchi(e), fiable et savez éviter les difficultés. Vous
+    atteignez facilement vos objectifs grâce à vos capacités d’anticipation et d’organisation. Vous êtes
+    perspicace et déterminé(e). Parfois, vous êtes très perfectionniste, soucieux(se) de l’ordre dans vos
+    tâches et au travail.</p></h5>
+    <h3>Nevrosisme</h3><div id="result4"> Your score  will be updated</div>
+
+<h5><p>Plus votre score est faible (au moins inférieur à 15), plus vous êtes émotionnellement stable. Vous êtes
+    en général calme, d’humeur égale et détendu(e). Vous affrontez les situations stressantes sans vous
+    déstabiliser, sans inquiétude et avec confiance. Vous prenez le temps d’interpréter les événements
+    avec discernement et agissez de façon raisonnée, non impulsive. Vous avez tendance à éprouver peu
+    d’émotions négatives.
+    Si votre score est élevé, vous éprouvez souvent de l’anxiété, de la colère ou de la peur. Vous êtes très
+    réactif(ve) sur le plan émotionnel, voire instable, avec une humeur changeante et négative. Vous avez
+    tendance à interpréter des situations ordinaires comme menaçantes, et des événements mineurs
+    comme insurmontables. Vous êtes souvent tendu(e) et avez en général beaucoup de difficultés à gérer
+    le stress de la vie quotidienne. Vos émotions peuvent entraver votre capacité à raisonner et votre
+    lucidité, d’où parfois des prises de décisions inadaptées. Vous avez aussi tendance à être triste et
+    déprimé(e).</p></h5>
+    <h3>Ouverture à l’expérience</h3><div id="result5"> Your score  will be updated</div>
+
+<h5><p>Si votre score est faible (au moins inférieur à 15), vous avez tendance à être terre à terre,
+    conventionnel(le) et fuyez l’originalité, l’extravagance. Vous écoutez assez peu vos sentiments et
+    émotions, vous êtes plutôt centré(e) sur vos objectifs. Vous privilégiez les aspects pratiques et les
+    choses qui ont déjà fait leurs preuves. Vous avez peu de centres d’intérêt et portez assez peu d’attention
+    aux activités artistiques, esthétiques, scientifiques et métaphysiques. Vous appréciez davantage un
+    environnement familier et êtes routinier(ère). Vos habitudes vous rassurent, alors que le changement
+    et la nouveauté peuvent vous inquiéter.
+    Plus votre score est élevé, plus vous êtes curieux(se), inventif(ve) et imaginatif(ve). Vous appréciez l’art,
+    les activités diversifiées et non conventionnelles. Vous êtes davantage attiré(e) par la complexité, le sens
+    caché des événements, l’ambiguïté, que par les évidences. Vous aimez jouer avec les idées, avoir des
+    discussions profondes et existentielles avec vos amis. La nouveauté, le changement ainsi que la différence
+    chez autrui guident vos intérêts et vos actions. Vous écoutez vos sentiments et avez tendance à penser
+    et à agir de façon personnelle, voire non conformiste (vous êtes indépendant(e) dans vos jugements).</p></h5>
+
+<!-- les fonction MyExtra,Mycar.... calcul les points aquis et les mets dans des variables  -->
+<script>
+    let Extra=0,Agr=0,Car=0,Nev=0,Ouv=0;
+    function myExtra() {
+if (document.getElementById('q13').checked) {
+    Extra=Extra+3;;
+   }
+   if (document.getElementById('q12').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q11').checked) {
+    Extra=Extra+1;
+   }
+
+   if (document.getElementById('q73').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q72').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q71').checked) {
+    Extra=Extra+1;
+   }
+
+   if (document.getElementById('q143').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q142').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q141').checked) {
+    Extra=Extra+1;
+   }
+
+   if (document.getElementById('q213').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q212').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q211').checked) {
+    Extra=Extra+1;
+   }
+
+   if (document.getElementById('q253').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q252').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q251').checked) {
+    Extra=Extra+1;
+   }
+
+   if (document.getElementById('q313').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q312').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q311').checked) {
+    Extra=Extra+1;
+   }
+
+   if (document.getElementById('q353').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q352').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q351').checked) {
+    Extra=Extra+1;
+   }
+   
+   if (document.getElementById('q423').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q422').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q421').checked) {
+    Extra=Extra+1;
+   }
+
+   if (document.getElementById('q473').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q472').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q471').checked) {
+    Extra=Extra+1;
+   }
+
+   if (document.getElementById('q503').checked) {
+    Extra=Extra+3;
+   }
+   if (document.getElementById('q502').checked) {
+    Extra=Extra+2;
+   }
+   if (document.getElementById('q501').checked) {
+    Extra=Extra+1;
+   }
+}
+function myAgr() {
+if (document.getElementById('q23').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q22').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q21').checked) {
+    Agr=Agr+1;
+   }
+
+   if (document.getElementById('q43').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q42').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q41').checked) {
+    Agr=Agr+1;
+   }
+
+   if (document.getElementById('q83').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q82').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q81').checked) {
+    Agr=Agr+1;
+   }
+
+   if (document.getElementById('q133').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q132').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q131').checked) {
+    Agr=Agr+1;
+   }
+
+   if (document.getElementById('q173').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q172').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q171').checked) {
+    Agr=Agr+1;
+   }
+
+   if (document.getElementById('q233').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q232').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q231').checked) {
+    Agr=Agr+1;
+   }
+
+   if (document.getElementById('q263').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q262').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q261').checked) {
+    Agr=Agr+1;
+   }
+   
+   if (document.getElementById('q303').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q302').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q301').checked) {
+    Agr=Agr+1;
+   }
+
+   if (document.getElementById('q403').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q402').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q401').checked) {
+    Agr=Agr+1;
+   }
+
+   if (document.getElementById('q463').checked) {
+    Agr=Agr+3;
+   }
+   if (document.getElementById('q462').checked) {
+    Agr=Agr+2;
+   }
+   if (document.getElementById('q461').checked) {
+    Agr=Agr+1;
+   }
+}
+function myCar() {
+if (document.getElementById('q33').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q32').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q31').checked) {
+    Car=Car+1;
+   }
+
+   if (document.getElementById('q103').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q102').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q101').checked) {
+    Car=Car+1;
+   }
+
+   if (document.getElementById('q153').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q152').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q151').checked) {
+    Car=Car+1;
+   }
+
+   if (document.getElementById('q193').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q192').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q191').checked) {
+    Car=Car+1;
+   }
+
+   if (document.getElementById('q273').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q272').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q271').checked) {
+    Car=Car+1;
+   }
+
+   if (document.getElementById('q333').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q332').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q331').checked) {
+    Car=Car+1;
+   }
+
+   if (document.getElementById('q383').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q382').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q381').checked) {
+    Car=Car+1;
+   }
+   
+   if (document.getElementById('q413').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q412').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q411').checked) {
+    Car=Car+1;
+   }
+
+   if (document.getElementById('q443').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q442').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q441').checked) {
+    Car=Car+1;
+   }
+
+   if (document.getElementById('q493').checked) {
+    Car=Car+3;
+   }
+   if (document.getElementById('q492').checked) {
+    Car=Car+2;
+   }
+   if (document.getElementById('q491').checked) {
+    Car=Car+1;
+   }
+}
+function myNev() {
+if (document.getElementById('q53').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q52').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q51').checked) {
+    Nev=Nev+1;
+   }
+
+   if (document.getElementById('q93').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q92').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q91').checked) {
+    Nev=Nev+1;
+   }
+
+   if (document.getElementById('q123').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q122').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q121').checked) {
+    Nev=Nev+1;
+   }
+
+   if (document.getElementById('q163').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q162').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q161').checked) {
+    Nev=Nev+1;
+   }
+
+   if (document.getElementById('q223').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q222').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q221').checked) {
+    Nev=Nev+1;
+   }
+
+   if (document.getElementById('q283').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q282').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q281').checked) {
+    Nev=Nev+1;
+   }
+
+   if (document.getElementById('q323').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q322').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q321').checked) {
+    Nev=Nev+1;
+   }
+   
+   if (document.getElementById('q363').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q362').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q361').checked) {
+    Nev=Nev+1;
+   }
+
+   if (document.getElementById('q373').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q372').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q371').checked) {
+    Nev=Nev+1;
+   }
+
+   if (document.getElementById('q453').checked) {
+    Nev=Nev+3;
+   }
+   if (document.getElementById('q452').checked) {
+    Nev=Nev+2;
+   }
+   if (document.getElementById('q451').checked) {
+    Nev=Nev+1;
+   }
+}
+function myOuv() {
+if (document.getElementById('q63').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q62').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q61').checked) {
+    Ouv=Ouv+1;
+   }
+
+   if (document.getElementById('q113').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q112').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q111').checked) {
+    Ouv=Ouv+1;
+   }
+
+   if (document.getElementById('q183').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q182').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q181').checked) {
+    Ouv=Ouv+1;
+   }
+
+   if (document.getElementById('q203').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q202').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q201').checked) {
+    Ouv=Ouv+1;
+   }
+
+   if (document.getElementById('q243').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q242').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q241').checked) {
+    Ouv=Ouv+1;
+   }
+
+   if (document.getElementById('q293').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q292').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q291').checked) {
+    Ouv=Ouv+1;
+   }
+
+   if (document.getElementById('q343').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q342').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q341').checked) {
+    Ouv=Ouv+1;
+   }
+   
+   if (document.getElementById('q393').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q392').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q391').checked) {
+    Ouv=Ouv+1;
+   }
+
+   if (document.getElementById('q433').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q432').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q431').checked) {
+    Ouv=Ouv+1;
+   }
+
+   if (document.getElementById('q483').checked) {
+    Ouv=Ouv+3;
+   }
+   if (document.getElementById('q482').checked) {
+    Ouv=Ouv+2;
+   }
+   if (document.getElementById('q481').checked) {
+    Ouv=Ouv+1;
+   }
+}
+
+// fonction afficher active ces fonctions la puis affiche le resultat dans des espaces bien définit avec des Ids spécifique
+function afficher(){
+myAgr();
+myCar();
+myExtra();
+myNev();
+myOuv();
+document.getElementById("result1").innerHTML=Extra
+document.getElementById("result2").innerHTML=Agr
+document.getElementById("result3").innerHTML=Car
+document.getElementById("result4").innerHTML=Nev
+document.getElementById("result5").innerHTML=Ouv
+  
+    
+}
+
+
+</script>
+<a href="/site.html"><center><button > return to main screen</button></center></a><br><br>
+</body>
+</html>

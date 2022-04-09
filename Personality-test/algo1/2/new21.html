@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+<style type="text/css">
+body{
+            background-image:  url(/bg.jpg); display: block;
+             margin-left: auto;
+            margin-right: auto;
+             width: 50%;
+        }
+.header{
+
+	height: 70px;
+	padding-left: 20px;
+	padding-top:20px;
+	color: rgb(68, 68, 88);
+	font-family: 'Quicksand';
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: lowercase;
+
+}
+font:hover{
+	color:rgb(33, 33, 39);
+	animation:w3-effect 4s 1;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+</head>
+
+  <form name="quiz">
+<div style="height: 75px"></div>
+<center><div style="padding: 1%;font-family: helvetica;">
+    6. Quand je suis invité(e) à une fête et que
+je me sens bien au départ, ce sentiment positif
+a tendance à durer toute la soirée.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q1" value="in" id="q1s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q1" value="ex" id="q1i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    7. L’impression suscitée par un beau paysage,
+    par un superbe coucher de soleil, se dissipe
+    vite et je m’ennuie facilement.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q2" value="ex" id="q2s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q2" value="in" id="q2i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    8. Quand je me réveille le matin, je pense à une
+    activité agréable que j’ai prévue, et cela me met
+    de bonne humeur pour toute la journée.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q3" value="ex" id="q3s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q3" value="in" id="q3i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    9. Quand je vais au musée ou au concert, les
+    premières minutes sont vraiment agréables,
+    mais cela ne dure pas.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q4" value="in" id="q4s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q4" value="ex" id="q4i">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    10. Les jours où je suis très occupé(e), j’ai
+souvent le sentiment que je peux enchaîner
+les activités sans me fatiguer.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q5" value="in" id="q5s">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q5" value="ex" id="q5i">Disagree<br>
+</div></center>
+</form>
+
+
+<p style="padding: 1%"><center><button onclick="validate()">Next</button></center></p>
+
+
+<script>
+    sessionStorage.s=0;
+    sessionStorage.in=0;
+    function op(){ window.open("final2.html","_self");}
+function myFunction() {
+if (document.getElementById('q1s').checked) {
+    sessionStorage.s++;
+   }
+
+if (document.getElementById('q2i').checked) {
+    sessionStorage.in++;
+   }
+if (document.getElementById('q3s').checked) {
+    sessionStorage.s++;
+   }
+
+if (document.getElementById('q4i').checked) {
+    sessionStorage.i++;
+   }
+if (document.getElementById('q5s').checked) {
+    sessionStorage.s++;
+   }
+}
+   function validate(){
+if (!(document.getElementById('q1s').checked)&&!(document.getElementById('q1i').checked))
+{
+    alert("Please select an answer for the question 6!!!");
+    return false;
+}
+else if (!(document.getElementById('q2s').checked)&&!(document.getElementById('q2i').checked))
+{
+    alert("Please select an answer for the question 7!!!");
+    return false;
+}
+else if (!(document.getElementById('q3s').checked)&&!(document.getElementById('q3i').checked))
+{
+    alert("Please select an answer for the question 8!!!");
+    return false;
+}
+else if (!(document.getElementById('q4s').checked)&&!(document.getElementById('q4i').checked))
+{
+    alert("Please select an answer for the question 9!!!");
+    return false;
+}
+else if (!(document.getElementById('q5s').checked)&&!(document.getElementById('q5i').checked))
+{
+    alert("Please select an answer for the question 10!!!");
+    return false;
+}
+myFunction();
+op();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+<style type="text/css">
+body{
+            background-image:  url(/bg.jpg); display: block;
+             margin-left: auto;
+            margin-right: auto;
+             width: 50%;
+        }
+.header{
+
+	height: 70px;
+	padding-left: 20px;
+	padding-top:20px;
+
+	color: rgb(68, 68, 88);
+	font-family: 'Quicksand';
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: lowercase;
+
+}
+font:hover{
+	color:rgb(33, 33, 39);
+	animation:w3-effect 4s 1;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+</head>
+
+
+	
+  <form name="quiz">
+<div style="height: 75px"></div>
+<center>
+    
+    1. Souvent, quand on me demande pourquoi
+    je suis triste ou en colère, je réponds
+    (ou je pense) : « Mais pas du tout ! » 
+     <br>  Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q1" value="in" id="q1i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q1" value="ex" id="q1e">Disagree<br>
+
+<div style="padding: 1%;font-family: helvetica;">
+    2. Quand mes proches me demandent pourquoi
+    j’ai traité quelqu’un de façon brusque ou
+    méchante, je nie souvent m’être conduit(e) ainsi.<br>
+    Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q2" value="ex" id="q2i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q2" value="in" id="q2e">Disagree<br>
+</div>
+3. Souvent – plusieurs fois par mois –,
+je m’aperçois que mon coeur bat très vite ou
+très fort, et je ne sais absolument pas pourquoi.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q3" value="ex" id="q3i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q3" value="in" id="q3e">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    4. Quand j’observe quelqu’un qui souffre, je
+    ressens sa douleur en moi, sur les plans
+    physique et émotionnel.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q4" value="in" id="q4i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q4" value="ex" id="q4e">Disagree<br>
+</div>
+5. En général, je sais de façon certaine
+ce que je ressens et je peux traduire mes
+émotions en mots.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q5" value="in" id="q5i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q5" value="ex" id="q5e">Disagree<br>
+</div></center>
+</form>
+
+
+<p style="padding: 1%"><center><button onclick="validate()">Next</button></center></p>
+
+
+<script>
+    sessionStorage.e=0;
+    sessionStorage.i=0;
+function op(){ window.open("new41.html","_self");}
+function myFunction() {
+if (document.getElementById('q1e').checked) {
+    sessionStorage.e++;
+   }
+
+if (document.getElementById('q2e').checked) {
+    sessionStorage.i++;
+   }
+if (document.getElementById('q3e').checked) {
+    sessionStorage.e++;
+   }
+if (document.getElementById('q4i').checked) {
+    sessionStorage.i++;
+   }
+if (document.getElementById('q5i').checked) {
+    sessionStorage.e++;
+   }
+}
+   function validate(){
+if (!(document.getElementById('q1e').checked)&&!(document.getElementById('q1i').checked))
+{
+    alert("Please select an answer for the question 1!!!");
+    return false;
+}
+else if (!(document.getElementById('q2e').checked)&&!(document.getElementById('q2i').checked))
+{
+    alert("Please select an answer for the question 2!!!");
+    return false;
+}
+else if (!(document.getElementById('q3e').checked)&&!(document.getElementById('q3i').checked))
+{
+    alert("Please select an answer for the question 3!!!");
+    return false;
+}
+else if (!(document.getElementById('q4e').checked)&&!(document.getElementById('q4i').checked))
+{
+    alert("Please select an answer for the question 4!!!");
+    return false;
+}
+else if (!(document.getElementById('q5e').checked)&&!(document.getElementById('q5i').checked))
+{
+    alert("Please select an answer for the question 5!!!");
+    return false;
+}
+myFunction();
+op();
+}
+</script>
+
+</body>
+</html>

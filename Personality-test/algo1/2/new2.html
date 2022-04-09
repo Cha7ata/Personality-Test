@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function myfunction()
+  {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+  </script>
+<style type="text/css">
+body{
+            background-image:  url(/bg.jpg); display: block;
+             margin-left: auto;
+            margin-right: auto;
+             width: 50%;
+        }
+.header{
+	height: 70px;
+	padding-left: 20px;
+	padding-top:20px;
+
+	color: rgb(68, 68, 88);
+	font-family: 'Quicksand';
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: lowercase;
+
+}
+font:hover{
+	color:rgb(33, 33, 39);
+	animation:w3-effect 4s 1;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+</head>
+
+
+	
+  <form name="quiz">
+<div style="height: 75px"></div>
+<center>
+    1. Quand je suis invité(e) à rencontrer des gens
+    que je ne connais pas, je suis enthousiaste car
+    j’imagine qu’ils pourraient devenir des amis,
+    plutôt que d’y voir une corvée à l’idée que ces
+    gens ne m’intéresseront pas.    <br>
+  <br>  Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q1" value="in" id="q1i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q1" value="ex" id="q1e">Disagree<br>
+
+<div style="padding: 1%;font-family: helvetica;">
+    2. Quand j’évalue un collègue, je me focalise sur
+les détails sur lesquels il doit s’améliorer, plutôt
+que sur sa performance globalement positive.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q2" value="ex" id="q2i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q2" value="in" id="q2e">Disagree<br>
+</div>
+3. Je pense que les dix années à venir seront
+meilleures pour moi que les dix années écoulées.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q3" value="ex" id="q3i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q3" value="in" id="q3e">Disagree<br>
+</div>
+<div style="padding: 1%;font-family: helvetica;">
+    4. Confronté(e) à la possibilité de déménager,
+j’y vois un effrayant saut dans l’inconnu.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q4" value="in" id="q4i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q4" value="ex" id="q4e">Disagree<br>
+</div>
+5. Quand il m’arrive le matin un petit événement
+inattendu mais positif – par exemple, si j’ai une
+conversation formidable avec un inconnu –, cette
+humeur positive se dissipe en quelques minutes.<br>
+Agree<input style="margin-left: 10px;margin-top: 1%;" type="radio" name="q5" value="in" id="q5i">
+<input style="margin-left: 5%;margin-top: 1%;" type="radio" name="q5" value="ex" id="q5e">Disagree<br>
+</div></center>
+</form>
+
+
+<p style="padding: 1%"><center><button onclick="validate()">Next</button></center></p>
+
+
+<script>
+    sessionStorage.e=0;
+    sessionStorage.i=0;
+function op(){ window.open("new21.html","_self");}
+function myFunction() {
+if (document.getElementById('q1i').checked) {
+    sessionStorage.e++;
+   }
+
+if (document.getElementById('q2e').checked) {
+    sessionStorage.i++;
+   }
+if (document.getElementById('q3i').checked) {
+    sessionStorage.e++;
+   }
+if (document.getElementById('q4e').checked) {
+    sessionStorage.i++;
+   }
+if (document.getElementById('q5e').checked) {
+    sessionStorage.e++;
+   }
+}
+   function validate(){
+if (!(document.getElementById('q1e').checked)&&!(document.getElementById('q1i').checked))
+{
+    alert("Please select an answer for the question 1!!!");
+    return false;
+}
+else if (!(document.getElementById('q2e').checked)&&!(document.getElementById('q2i').checked))
+{
+    alert("Please select an answer for the question 2!!!");
+    return false;
+}
+else if (!(document.getElementById('q3e').checked)&&!(document.getElementById('q3i').checked))
+{
+    alert("Please select an answer for the question 3!!!");
+    return false;
+}
+else if (!(document.getElementById('q4e').checked)&&!(document.getElementById('q4i').checked))
+{
+    alert("Please select an answer for the question 4!!!");
+    return false;
+}
+else if (!(document.getElementById('q5e').checked)&&!(document.getElementById('q5i').checked))
+{
+    alert("Please select an answer for the question 5!!!");
+    return false;
+}
+myFunction();
+op();
+}
+</script>
+
+</body>
+</html>
